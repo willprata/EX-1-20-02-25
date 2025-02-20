@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class ConversaoMoeda {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite o valor em reais (R$): ");
+        double reais = scanner.nextDouble();
+
+        System.out.print("Digite a cotação do dólar (US$): ");
+        double cotacaoDolar = scanner.nextDouble();
+
+        double dolares = reais / cotacaoDolar;
+
+        System.out.println("O valor de R$ " + reais + " equivale a US$ " + dolares);
+
+        scanner.close();
+    }
+}
